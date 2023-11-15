@@ -13,7 +13,7 @@ var app = express();
 
 //CORS
 const corsOptions = {
-  origin: ['http://127.0.0.1:5500', 'http://blogsite.com'],
+  origin: ['http://127.0.0.1:5500', 'http://blogsite.com', "https://nelkeysblog.vercel.app"],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true, 
   optionsSuccessStatus: 204, 

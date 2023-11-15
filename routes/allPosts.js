@@ -12,6 +12,14 @@ router.get("/all", (req, res)=>{
         }
 })
 
+router.get("/featured", (req, res)=>{
+    try {
+        res.send(postControllerClass.featured())
+    } catch (error) {
+        console.log(error);
+    }
+})
+
 router.get('/id/:id', (req, res) => {
     try {
         res.send(postControllerClass.byID(req.params.id))
@@ -27,5 +35,7 @@ router.get('/blob/:blob', (req, res) => {
         console.log(error);
     }
 })
+
+
 
 module.exports = router

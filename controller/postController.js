@@ -37,6 +37,17 @@ const postClass = class posts {
             console.error(error)
         }
     }
+
+    featured(){
+        try {
+            const postsData = fs.readFileSync(postDataPath, "UTF-8")    
+            let data = JSON.parse(postsData)
+            return data.splice(0, 3)
+
+        } catch (error) {
+            console.error(error)
+        }
+    }
 }
 
 module.exports = {postClass}

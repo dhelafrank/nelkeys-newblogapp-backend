@@ -15,7 +15,7 @@
     },
     {
       "id": 3,
-      "title": "Node.js and Express for Backend Development",
+      "title": "Node.js and Express for Backend",
       "content": "Node.js and Express are a powerful combination for building scalable and performant backend applications. They allow you to easily create RESTful APIs.",
       "date": "1693782000000",
       "timeToRead":2
